@@ -1,0 +1,794 @@
+(DELAYFILE
+(SDFVERSION "OVI 1.0")
+(DESIGN "elevator_controller")
+(DATE "Thu Nov 14 18:49:34 2024")
+(VENDOR "IBM_CMOS8HP_SS125")
+(PROGRAM "Synopsys Design Compiler cmos")
+(VERSION "O-2018.06-SP1")
+(DIVIDER /)
+(VOLTAGE 1.35:1.35:1.35)
+(PROCESS)
+(TEMPERATURE 125.00:125.00:125.00)
+(TIMESCALE 1ns)
+(CELL
+  (CELLTYPE "elevator_controller")
+  (INSTANCE)
+  (DELAY
+    (ABSOLUTE
+    (INTERCONNECT U1/Z U3/A (0.000:0.000:0.000))
+    (INTERCONNECT U1/Z U2/A (0.000:0.000:0.000))
+    (INTERCONNECT rst_n U1/A (0.000:0.000:0.000))
+    (INTERCONNECT the_elevator/rst_n U1/A (0.000:0.000:0.000))
+    (INTERCONNECT the_elevator/floor_button_clear_internal[0] u_floor_button_3_down/U10/A (0.000:0.000:0.000))
+    (INTERCONNECT u_floor_button_3_down/U9/Z u_floor_button_3_down/U10/B (0.000:0.000:0.000))
+    (INTERCONNECT floor_button_pressed[0] u_floor_button_3_down/U9/A (0.000:0.000:0.000))
+    (INTERCONNECT u_floor_button_3_down/U7/Z u_floor_button_3_down/U9/B (0.000:0.000:0.000))
+    (INTERCONNECT u_floor_button_3_down/U6/Z u_floor_button_3_down/U8/A (0.000:0.000:0.000))
+    (INTERCONNECT u_floor_button_3_down/U3/Z u_floor_button_3_down/U7/A (0.000:0.000:0.000))
+    (INTERCONNECT u_floor_button_3_down/U5/Z u_floor_button_3_down/U6/A (0.000:0.000:0.000))
+    (INTERCONNECT u_floor_button_3_down/U4/Z u_floor_button_3_down/U5/A (0.000:0.000:0.000))
+    (INTERCONNECT u_floor_button_3_down/button_out_reg/Q u_floor_button_3_down/U4/A (0.000:0.000:0.000))
+    (INTERCONNECT u_floor_button_3_down/U8/Z u_floor_button_3_down/U3/A (0.000:0.000:0.000))
+    (INTERCONNECT u_floor_button_3_down/U10/Z u_floor_button_3_down/button_out_reg/D (0.000:0.000:0.000))
+    (INTERCONNECT clk u_floor_button_3_down/button_out_reg/CLK (0.000:0.000:0.000))
+    (INTERCONNECT the_elevator/clk u_floor_button_3_down/button_out_reg/CLK (0.000:0.000:0.000))
+    (INTERCONNECT U3/Z u_floor_button_3_down/button_out_reg/RN (0.000:0.000:0.000))
+    (INTERCONNECT the_elevator/floor_button_clear_internal[1] u_floor_button_2_up/U10/A (0.000:0.000:0.000))
+    (INTERCONNECT u_floor_button_2_up/U9/Z u_floor_button_2_up/U10/B (0.000:0.000:0.000))
+    (INTERCONNECT floor_button_pressed[1] u_floor_button_2_up/U9/A (0.000:0.000:0.000))
+    (INTERCONNECT u_floor_button_2_up/U7/Z u_floor_button_2_up/U9/B (0.000:0.000:0.000))
+    (INTERCONNECT u_floor_button_2_up/U6/Z u_floor_button_2_up/U8/A (0.000:0.000:0.000))
+    (INTERCONNECT u_floor_button_2_up/U3/Z u_floor_button_2_up/U7/A (0.000:0.000:0.000))
+    (INTERCONNECT u_floor_button_2_up/U5/Z u_floor_button_2_up/U6/A (0.000:0.000:0.000))
+    (INTERCONNECT u_floor_button_2_up/U4/Z u_floor_button_2_up/U5/A (0.000:0.000:0.000))
+    (INTERCONNECT u_floor_button_2_up/button_out_reg/Q u_floor_button_2_up/U4/A (0.000:0.000:0.000))
+    (INTERCONNECT u_floor_button_2_up/U8/Z u_floor_button_2_up/U3/A (0.000:0.000:0.000))
+    (INTERCONNECT u_floor_button_2_up/U10/Z u_floor_button_2_up/button_out_reg/D (0.000:0.000:0.000))
+    (INTERCONNECT clk u_floor_button_2_up/button_out_reg/CLK (0.000:0.000:0.000))
+    (INTERCONNECT the_elevator/clk u_floor_button_2_up/button_out_reg/CLK (0.000:0.000:0.000))
+    (INTERCONNECT U3/Z u_floor_button_2_up/button_out_reg/RN (0.000:0.000:0.000))
+    (INTERCONNECT the_elevator/floor_button_clear_internal[2] u_floor_button_2_down/U10/A (0.000:0.000:0.000))
+    (INTERCONNECT u_floor_button_2_down/U9/Z u_floor_button_2_down/U10/B (0.000:0.000:0.000))
+    (INTERCONNECT floor_button_pressed[2] u_floor_button_2_down/U9/A (0.000:0.000:0.000))
+    (INTERCONNECT u_floor_button_2_down/U7/Z u_floor_button_2_down/U9/B (0.000:0.000:0.000))
+    (INTERCONNECT u_floor_button_2_down/U6/Z u_floor_button_2_down/U8/A (0.000:0.000:0.000))
+    (INTERCONNECT u_floor_button_2_down/U3/Z u_floor_button_2_down/U7/A (0.000:0.000:0.000))
+    (INTERCONNECT u_floor_button_2_down/U5/Z u_floor_button_2_down/U6/A (0.000:0.000:0.000))
+    (INTERCONNECT u_floor_button_2_down/U4/Z u_floor_button_2_down/U5/A (0.000:0.000:0.000))
+    (INTERCONNECT u_floor_button_2_down/button_out_reg/Q u_floor_button_2_down/U4/A (0.000:0.000:0.000))
+    (INTERCONNECT u_floor_button_2_down/U8/Z u_floor_button_2_down/U3/A (0.000:0.000:0.000))
+    (INTERCONNECT u_floor_button_2_down/U10/Z u_floor_button_2_down/button_out_reg/D (0.000:0.000:0.000))
+    (INTERCONNECT clk u_floor_button_2_down/button_out_reg/CLK (0.000:0.000:0.000))
+    (INTERCONNECT the_elevator/clk u_floor_button_2_down/button_out_reg/CLK (0.000:0.000:0.000))
+    (INTERCONNECT U3/Z u_floor_button_2_down/button_out_reg/RN (0.000:0.000:0.000))
+    (INTERCONNECT the_elevator/floor_button_clear_internal[3] u_floor_button_1_up/U10/A (0.000:0.000:0.000))
+    (INTERCONNECT u_floor_button_1_up/U9/Z u_floor_button_1_up/U10/B (0.000:0.000:0.000))
+    (INTERCONNECT floor_button_pressed[3] u_floor_button_1_up/U9/A (0.000:0.000:0.000))
+    (INTERCONNECT u_floor_button_1_up/U7/Z u_floor_button_1_up/U9/B (0.000:0.000:0.000))
+    (INTERCONNECT u_floor_button_1_up/U6/Z u_floor_button_1_up/U8/A (0.000:0.000:0.000))
+    (INTERCONNECT u_floor_button_1_up/U3/Z u_floor_button_1_up/U7/A (0.000:0.000:0.000))
+    (INTERCONNECT u_floor_button_1_up/U5/Z u_floor_button_1_up/U6/A (0.000:0.000:0.000))
+    (INTERCONNECT u_floor_button_1_up/U4/Z u_floor_button_1_up/U5/A (0.000:0.000:0.000))
+    (INTERCONNECT u_floor_button_1_up/button_out_reg/Q u_floor_button_1_up/U4/A (0.000:0.000:0.000))
+    (INTERCONNECT u_floor_button_1_up/U8/Z u_floor_button_1_up/U3/A (0.000:0.000:0.000))
+    (INTERCONNECT u_floor_button_1_up/U10/Z u_floor_button_1_up/button_out_reg/D (0.000:0.000:0.000))
+    (INTERCONNECT clk u_floor_button_1_up/button_out_reg/CLK (0.000:0.000:0.000))
+    (INTERCONNECT the_elevator/clk u_floor_button_1_up/button_out_reg/CLK (0.000:0.000:0.000))
+    (INTERCONNECT U2/Z u_floor_button_1_up/button_out_reg/RN (0.000:0.000:0.000))
+    (INTERCONNECT the_elevator/elevator_floor_button_clear_internal[0] u_elevator_button_3/U10/A (0.000:0.000:0.000))
+    (INTERCONNECT u_elevator_button_3/U9/Z u_elevator_button_3/U10/B (0.000:0.000:0.000))
+    (INTERCONNECT elevator_floor_button_pressed[0] u_elevator_button_3/U9/A (0.000:0.000:0.000))
+    (INTERCONNECT u_elevator_button_3/U7/Z u_elevator_button_3/U9/B (0.000:0.000:0.000))
+    (INTERCONNECT u_elevator_button_3/U6/Z u_elevator_button_3/U8/A (0.000:0.000:0.000))
+    (INTERCONNECT u_elevator_button_3/U3/Z u_elevator_button_3/U7/A (0.000:0.000:0.000))
+    (INTERCONNECT u_elevator_button_3/U5/Z u_elevator_button_3/U6/A (0.000:0.000:0.000))
+    (INTERCONNECT u_elevator_button_3/U4/Z u_elevator_button_3/U5/A (0.000:0.000:0.000))
+    (INTERCONNECT u_elevator_button_3/button_out_reg/Q u_elevator_button_3/U4/A (0.000:0.000:0.000))
+    (INTERCONNECT u_elevator_button_3/U8/Z u_elevator_button_3/U3/A (0.000:0.000:0.000))
+    (INTERCONNECT u_elevator_button_3/U10/Z u_elevator_button_3/button_out_reg/D (0.000:0.000:0.000))
+    (INTERCONNECT clk u_elevator_button_3/button_out_reg/CLK (0.000:0.000:0.000))
+    (INTERCONNECT the_elevator/clk u_elevator_button_3/button_out_reg/CLK (0.000:0.000:0.000))
+    (INTERCONNECT U2/Z u_elevator_button_3/button_out_reg/RN (0.000:0.000:0.000))
+    (INTERCONNECT the_elevator/elevator_floor_button_clear_internal[1] u_elevator_button_2/U10/A (0.000:0.000:0.000))
+    (INTERCONNECT u_elevator_button_2/U9/Z u_elevator_button_2/U10/B (0.000:0.000:0.000))
+    (INTERCONNECT elevator_floor_button_pressed[1] u_elevator_button_2/U9/A (0.000:0.000:0.000))
+    (INTERCONNECT u_elevator_button_2/U7/Z u_elevator_button_2/U9/B (0.000:0.000:0.000))
+    (INTERCONNECT u_elevator_button_2/U6/Z u_elevator_button_2/U8/A (0.000:0.000:0.000))
+    (INTERCONNECT u_elevator_button_2/U3/Z u_elevator_button_2/U7/A (0.000:0.000:0.000))
+    (INTERCONNECT u_elevator_button_2/U5/Z u_elevator_button_2/U6/A (0.000:0.000:0.000))
+    (INTERCONNECT u_elevator_button_2/U4/Z u_elevator_button_2/U5/A (0.000:0.000:0.000))
+    (INTERCONNECT u_elevator_button_2/button_out_reg/Q u_elevator_button_2/U4/A (0.000:0.000:0.000))
+    (INTERCONNECT u_elevator_button_2/U8/Z u_elevator_button_2/U3/A (0.000:0.000:0.000))
+    (INTERCONNECT u_elevator_button_2/U10/Z u_elevator_button_2/button_out_reg/D (0.000:0.000:0.000))
+    (INTERCONNECT clk u_elevator_button_2/button_out_reg/CLK (0.000:0.000:0.000))
+    (INTERCONNECT the_elevator/clk u_elevator_button_2/button_out_reg/CLK (0.000:0.000:0.000))
+    (INTERCONNECT U2/Z u_elevator_button_2/button_out_reg/RN (0.000:0.000:0.000))
+    (INTERCONNECT the_elevator/elevator_floor_button_clear_internal[2] u_elevator_button_1/U10/A (0.000:0.000:0.000))
+    (INTERCONNECT u_elevator_button_1/U9/Z u_elevator_button_1/U10/B (0.000:0.000:0.000))
+    (INTERCONNECT elevator_floor_button_pressed[2] u_elevator_button_1/U9/A (0.000:0.000:0.000))
+    (INTERCONNECT u_elevator_button_1/U7/Z u_elevator_button_1/U9/B (0.000:0.000:0.000))
+    (INTERCONNECT u_elevator_button_1/U6/Z u_elevator_button_1/U8/A (0.000:0.000:0.000))
+    (INTERCONNECT u_elevator_button_1/U3/Z u_elevator_button_1/U7/A (0.000:0.000:0.000))
+    (INTERCONNECT u_elevator_button_1/U5/Z u_elevator_button_1/U6/A (0.000:0.000:0.000))
+    (INTERCONNECT u_elevator_button_1/U4/Z u_elevator_button_1/U5/A (0.000:0.000:0.000))
+    (INTERCONNECT u_elevator_button_1/button_out_reg/Q u_elevator_button_1/U4/A (0.000:0.000:0.000))
+    (INTERCONNECT u_elevator_button_1/U8/Z u_elevator_button_1/U3/A (0.000:0.000:0.000))
+    (INTERCONNECT u_elevator_button_1/U10/Z u_elevator_button_1/button_out_reg/D (0.000:0.000:0.000))
+    (INTERCONNECT clk u_elevator_button_1/button_out_reg/CLK (0.000:0.000:0.000))
+    (INTERCONNECT the_elevator/clk u_elevator_button_1/button_out_reg/CLK (0.000:0.000:0.000))
+    (INTERCONNECT U3/Z u_elevator_button_1/button_out_reg/RN (0.000:0.000:0.000))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "INVERT_J")
+  (INSTANCE U3)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Z (0.057:0.058:0.058) (0.051:0.053:0.053))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "INVERT_I")
+  (INSTANCE U2)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Z (0.056:0.056:0.056) (0.049:0.051:0.051))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "INVERT_I")
+  (INSTANCE U1)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Z (0.091:0.091:0.091) (0.066:0.066:0.066))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "NOR2_C")
+  (INSTANCE u_floor_button_3_down/U10)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Z (0.065:0.063:0.063) (0.051:0.052:0.052))
+    (IOPATH B Z (0.084:0.086:0.086) (0.083:0.092:0.092))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "NOR2_C")
+  (INSTANCE u_floor_button_3_down/U9)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Z (0.110:0.114:0.114) (0.097:0.100:0.100))
+    (IOPATH B Z (0.083:0.086:0.086) (0.078:0.081:0.081))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "BUFFER_F")
+  (INSTANCE u_floor_button_3_down/U8)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Z (0.064:0.064:0.064) (0.072:0.072:0.072))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "INVERT_E")
+  (INSTANCE u_floor_button_3_down/U7)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Z (0.051:0.052:0.052) (0.049:0.051:0.051))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "DELAY4_F")
+  (INSTANCE u_floor_button_3_down/U6)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Z (0.222:0.222:0.222) (0.233:0.233:0.233))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "DELAY4_J")
+  (INSTANCE u_floor_button_3_down/U5)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Z (0.197:0.197:0.197) (0.215:0.215:0.215))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "BUFFER_D")
+  (INSTANCE u_floor_button_3_down/U4)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Z (0.113:0.113:0.113) (0.122:0.122:0.122))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "INVERT_D")
+  (INSTANCE u_floor_button_3_down/U3)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Z (0.057:0.057:0.057) (0.050:0.050:0.050))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "DFFR_K")
+  (INSTANCE u_floor_button_3_down/button_out_reg)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH CLK Q (0.390:0.390:0.390) (0.286:0.286:0.286))
+    (IOPATH RN Q () (0.313:0.313:0.313))
+    (IOPATH CLK QBAR (0.226:0.226:0.226) (0.323:0.323:0.323))
+    (IOPATH RN QBAR (0.251:0.252:0.252) ())
+    )
+  )
+  (TIMINGCHECK
+    (HOLD D (posedge CLK) (-0.101:0.039:0.039))
+    (SETUP D (posedge CLK) (0.229:0.241:0.241))
+    (RECOVERY RN (posedge CLK) (0.150:0.150:0.150))
+    (HOLD RN (posedge CLK) (0.047:0.047:0.047))
+  )
+)
+(CELL
+  (CELLTYPE "NOR2_C")
+  (INSTANCE u_floor_button_2_up/U10)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Z (0.065:0.063:0.063) (0.051:0.052:0.052))
+    (IOPATH B Z (0.084:0.086:0.086) (0.083:0.092:0.092))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "NOR2_C")
+  (INSTANCE u_floor_button_2_up/U9)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Z (0.110:0.114:0.114) (0.097:0.100:0.100))
+    (IOPATH B Z (0.083:0.086:0.086) (0.078:0.081:0.081))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "BUFFER_F")
+  (INSTANCE u_floor_button_2_up/U8)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Z (0.064:0.064:0.064) (0.072:0.072:0.072))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "INVERT_E")
+  (INSTANCE u_floor_button_2_up/U7)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Z (0.051:0.052:0.052) (0.049:0.051:0.051))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "DELAY4_F")
+  (INSTANCE u_floor_button_2_up/U6)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Z (0.222:0.222:0.222) (0.233:0.233:0.233))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "DELAY4_J")
+  (INSTANCE u_floor_button_2_up/U5)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Z (0.197:0.197:0.197) (0.215:0.215:0.215))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "BUFFER_D")
+  (INSTANCE u_floor_button_2_up/U4)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Z (0.113:0.113:0.113) (0.122:0.122:0.122))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "INVERT_D")
+  (INSTANCE u_floor_button_2_up/U3)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Z (0.057:0.057:0.057) (0.050:0.050:0.050))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "DFFR_K")
+  (INSTANCE u_floor_button_2_up/button_out_reg)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH CLK Q (0.390:0.390:0.390) (0.286:0.286:0.286))
+    (IOPATH RN Q () (0.313:0.313:0.313))
+    (IOPATH CLK QBAR (0.226:0.226:0.226) (0.323:0.323:0.323))
+    (IOPATH RN QBAR (0.251:0.252:0.252) ())
+    )
+  )
+  (TIMINGCHECK
+    (HOLD D (posedge CLK) (-0.101:0.039:0.039))
+    (SETUP D (posedge CLK) (0.229:0.241:0.241))
+    (RECOVERY RN (posedge CLK) (0.150:0.150:0.150))
+    (HOLD RN (posedge CLK) (0.047:0.047:0.047))
+  )
+)
+(CELL
+  (CELLTYPE "NOR2_C")
+  (INSTANCE u_floor_button_2_down/U10)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Z (0.065:0.063:0.063) (0.051:0.052:0.052))
+    (IOPATH B Z (0.084:0.086:0.086) (0.083:0.092:0.092))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "NOR2_C")
+  (INSTANCE u_floor_button_2_down/U9)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Z (0.110:0.114:0.114) (0.097:0.100:0.100))
+    (IOPATH B Z (0.083:0.086:0.086) (0.078:0.081:0.081))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "BUFFER_F")
+  (INSTANCE u_floor_button_2_down/U8)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Z (0.064:0.064:0.064) (0.072:0.072:0.072))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "INVERT_E")
+  (INSTANCE u_floor_button_2_down/U7)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Z (0.051:0.052:0.052) (0.049:0.051:0.051))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "DELAY4_F")
+  (INSTANCE u_floor_button_2_down/U6)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Z (0.222:0.222:0.222) (0.233:0.233:0.233))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "DELAY4_J")
+  (INSTANCE u_floor_button_2_down/U5)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Z (0.197:0.197:0.197) (0.215:0.215:0.215))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "BUFFER_D")
+  (INSTANCE u_floor_button_2_down/U4)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Z (0.113:0.113:0.113) (0.122:0.122:0.122))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "INVERT_D")
+  (INSTANCE u_floor_button_2_down/U3)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Z (0.057:0.057:0.057) (0.050:0.050:0.050))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "DFFR_K")
+  (INSTANCE u_floor_button_2_down/button_out_reg)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH CLK Q (0.390:0.390:0.390) (0.286:0.286:0.286))
+    (IOPATH RN Q () (0.313:0.313:0.313))
+    (IOPATH CLK QBAR (0.226:0.226:0.226) (0.323:0.323:0.323))
+    (IOPATH RN QBAR (0.251:0.252:0.252) ())
+    )
+  )
+  (TIMINGCHECK
+    (HOLD D (posedge CLK) (-0.101:0.039:0.039))
+    (SETUP D (posedge CLK) (0.229:0.241:0.241))
+    (RECOVERY RN (posedge CLK) (0.150:0.150:0.150))
+    (HOLD RN (posedge CLK) (0.047:0.047:0.047))
+  )
+)
+(CELL
+  (CELLTYPE "NOR2_C")
+  (INSTANCE u_floor_button_1_up/U10)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Z (0.065:0.063:0.063) (0.051:0.052:0.052))
+    (IOPATH B Z (0.084:0.086:0.086) (0.083:0.092:0.092))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "NOR2_C")
+  (INSTANCE u_floor_button_1_up/U9)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Z (0.110:0.114:0.114) (0.097:0.100:0.100))
+    (IOPATH B Z (0.083:0.086:0.086) (0.078:0.081:0.081))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "BUFFER_F")
+  (INSTANCE u_floor_button_1_up/U8)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Z (0.064:0.064:0.064) (0.072:0.072:0.072))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "INVERT_E")
+  (INSTANCE u_floor_button_1_up/U7)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Z (0.051:0.052:0.052) (0.049:0.051:0.051))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "DELAY4_F")
+  (INSTANCE u_floor_button_1_up/U6)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Z (0.222:0.222:0.222) (0.233:0.233:0.233))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "DELAY4_J")
+  (INSTANCE u_floor_button_1_up/U5)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Z (0.197:0.197:0.197) (0.215:0.215:0.215))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "BUFFER_D")
+  (INSTANCE u_floor_button_1_up/U4)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Z (0.113:0.113:0.113) (0.122:0.122:0.122))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "INVERT_D")
+  (INSTANCE u_floor_button_1_up/U3)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Z (0.057:0.057:0.057) (0.050:0.050:0.050))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "DFFR_K")
+  (INSTANCE u_floor_button_1_up/button_out_reg)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH CLK Q (0.390:0.390:0.390) (0.286:0.286:0.286))
+    (IOPATH RN Q () (0.312:0.313:0.313))
+    (IOPATH CLK QBAR (0.226:0.226:0.226) (0.323:0.323:0.323))
+    (IOPATH RN QBAR (0.251:0.252:0.252) ())
+    )
+  )
+  (TIMINGCHECK
+    (HOLD D (posedge CLK) (-0.101:0.039:0.039))
+    (SETUP D (posedge CLK) (0.229:0.241:0.241))
+    (RECOVERY RN (posedge CLK) (0.148:0.149:0.149))
+    (HOLD RN (posedge CLK) (0.048:0.048:0.048))
+  )
+)
+(CELL
+  (CELLTYPE "NOR2_C")
+  (INSTANCE u_elevator_button_3/U10)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Z (0.065:0.063:0.063) (0.051:0.052:0.052))
+    (IOPATH B Z (0.084:0.086:0.086) (0.083:0.092:0.092))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "NOR2_C")
+  (INSTANCE u_elevator_button_3/U9)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Z (0.110:0.114:0.114) (0.097:0.100:0.100))
+    (IOPATH B Z (0.083:0.086:0.086) (0.078:0.081:0.081))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "BUFFER_F")
+  (INSTANCE u_elevator_button_3/U8)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Z (0.064:0.064:0.064) (0.072:0.072:0.072))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "INVERT_E")
+  (INSTANCE u_elevator_button_3/U7)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Z (0.051:0.052:0.052) (0.049:0.051:0.051))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "DELAY4_F")
+  (INSTANCE u_elevator_button_3/U6)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Z (0.222:0.222:0.222) (0.233:0.233:0.233))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "DELAY4_J")
+  (INSTANCE u_elevator_button_3/U5)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Z (0.197:0.197:0.197) (0.215:0.215:0.215))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "BUFFER_D")
+  (INSTANCE u_elevator_button_3/U4)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Z (0.113:0.113:0.113) (0.122:0.122:0.122))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "INVERT_D")
+  (INSTANCE u_elevator_button_3/U3)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Z (0.057:0.057:0.057) (0.050:0.050:0.050))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "DFFR_K")
+  (INSTANCE u_elevator_button_3/button_out_reg)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH CLK Q (0.390:0.390:0.390) (0.286:0.286:0.286))
+    (IOPATH RN Q () (0.312:0.313:0.313))
+    (IOPATH CLK QBAR (0.226:0.226:0.226) (0.323:0.323:0.323))
+    (IOPATH RN QBAR (0.251:0.252:0.252) ())
+    )
+  )
+  (TIMINGCHECK
+    (HOLD D (posedge CLK) (-0.101:0.039:0.039))
+    (SETUP D (posedge CLK) (0.229:0.241:0.241))
+    (RECOVERY RN (posedge CLK) (0.148:0.149:0.149))
+    (HOLD RN (posedge CLK) (0.048:0.048:0.048))
+  )
+)
+(CELL
+  (CELLTYPE "NOR2_C")
+  (INSTANCE u_elevator_button_2/U10)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Z (0.065:0.063:0.063) (0.051:0.052:0.052))
+    (IOPATH B Z (0.084:0.086:0.086) (0.083:0.092:0.092))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "NOR2_C")
+  (INSTANCE u_elevator_button_2/U9)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Z (0.110:0.114:0.114) (0.097:0.100:0.100))
+    (IOPATH B Z (0.083:0.086:0.086) (0.078:0.081:0.081))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "BUFFER_F")
+  (INSTANCE u_elevator_button_2/U8)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Z (0.064:0.064:0.064) (0.072:0.072:0.072))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "INVERT_E")
+  (INSTANCE u_elevator_button_2/U7)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Z (0.051:0.052:0.052) (0.049:0.051:0.051))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "DELAY4_F")
+  (INSTANCE u_elevator_button_2/U6)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Z (0.222:0.222:0.222) (0.233:0.233:0.233))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "DELAY4_J")
+  (INSTANCE u_elevator_button_2/U5)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Z (0.197:0.197:0.197) (0.215:0.215:0.215))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "BUFFER_D")
+  (INSTANCE u_elevator_button_2/U4)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Z (0.113:0.113:0.113) (0.122:0.122:0.122))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "INVERT_D")
+  (INSTANCE u_elevator_button_2/U3)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Z (0.057:0.057:0.057) (0.050:0.050:0.050))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "DFFR_K")
+  (INSTANCE u_elevator_button_2/button_out_reg)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH CLK Q (0.390:0.390:0.390) (0.286:0.286:0.286))
+    (IOPATH RN Q () (0.312:0.313:0.313))
+    (IOPATH CLK QBAR (0.226:0.226:0.226) (0.323:0.323:0.323))
+    (IOPATH RN QBAR (0.251:0.252:0.252) ())
+    )
+  )
+  (TIMINGCHECK
+    (HOLD D (posedge CLK) (-0.101:0.039:0.039))
+    (SETUP D (posedge CLK) (0.229:0.241:0.241))
+    (RECOVERY RN (posedge CLK) (0.148:0.149:0.149))
+    (HOLD RN (posedge CLK) (0.048:0.048:0.048))
+  )
+)
+(CELL
+  (CELLTYPE "NOR2_C")
+  (INSTANCE u_elevator_button_1/U10)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Z (0.065:0.063:0.063) (0.051:0.052:0.052))
+    (IOPATH B Z (0.084:0.086:0.086) (0.083:0.092:0.092))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "NOR2_C")
+  (INSTANCE u_elevator_button_1/U9)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Z (0.110:0.114:0.114) (0.097:0.100:0.100))
+    (IOPATH B Z (0.083:0.086:0.086) (0.078:0.081:0.081))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "BUFFER_F")
+  (INSTANCE u_elevator_button_1/U8)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Z (0.064:0.064:0.064) (0.072:0.072:0.072))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "INVERT_E")
+  (INSTANCE u_elevator_button_1/U7)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Z (0.051:0.052:0.052) (0.049:0.051:0.051))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "DELAY4_F")
+  (INSTANCE u_elevator_button_1/U6)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Z (0.222:0.222:0.222) (0.233:0.233:0.233))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "DELAY4_J")
+  (INSTANCE u_elevator_button_1/U5)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Z (0.197:0.197:0.197) (0.215:0.215:0.215))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "BUFFER_D")
+  (INSTANCE u_elevator_button_1/U4)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Z (0.113:0.113:0.113) (0.122:0.122:0.122))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "INVERT_D")
+  (INSTANCE u_elevator_button_1/U3)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Z (0.057:0.057:0.057) (0.050:0.050:0.050))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "DFFR_K")
+  (INSTANCE u_elevator_button_1/button_out_reg)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH CLK Q (0.390:0.390:0.390) (0.286:0.286:0.286))
+    (IOPATH RN Q () (0.313:0.313:0.313))
+    (IOPATH CLK QBAR (0.226:0.226:0.226) (0.323:0.323:0.323))
+    (IOPATH RN QBAR (0.251:0.252:0.252) ())
+    )
+  )
+  (TIMINGCHECK
+    (HOLD D (posedge CLK) (-0.101:0.039:0.039))
+    (SETUP D (posedge CLK) (0.229:0.241:0.241))
+    (RECOVERY RN (posedge CLK) (0.150:0.150:0.150))
+    (HOLD RN (posedge CLK) (0.047:0.047:0.047))
+  )
+)
+)

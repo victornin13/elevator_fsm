@@ -1,0 +1,44 @@
+ 
+****************************************
+Report : area
+Design : program_counter_v1
+Version: O-2018.06-SP1
+Date   : Tue Nov 12 14:13:59 2024
+****************************************
+
+Library(s) Used:
+
+    IBM_CMOS8HP_SS125 (File: /apps/design_kits/ibm_kits/IBM_IP/ibm_cmos8hp/std_cell/sc/v.20110613/synopsys/ss_125/IBM_CMOS8HP_SS125.db)
+
+Number of ports:                           46
+Number of nets:                           187
+Number of cells:                          140
+Number of combinational cells:            114
+Number of sequential cells:                25
+Number of macros/black boxes:               0
+Number of buf/inv:                         76
+Number of references:                      28
+
+Combinational area:               1616.640016
+Buf/Inv area:                      850.560007
+Noncombinational area:             967.679993
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:                  2584.320009
+Total area:                 undefined
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area          Local cell area
+                                  ------------------  ---------------------------- 
+Hierarchical cell                 Absolute   Percent  Combi-     Noncombi-  Black-
+                                  Total      Total    national   national   boxes   Design
+--------------------------------  ---------  -------  ---------  ---------  ------  -----------------------------
+program_counter_v1                2584.3200    100.0  1388.1600   967.6800  0.0000  program_counter_v1
+add_75                             228.4800      8.8   228.4800     0.0000  0.0000  program_counter_v1_DW01_add_0
+--------------------------------  ---------  -------  ---------  ---------  ------  -----------------------------
+Total                                                 1616.6400   967.6800  0.0000
+
+1
