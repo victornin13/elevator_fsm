@@ -1,0 +1,8 @@
+#!/bin/bash
+
+# list of design files to be compiled
+
+ver_files=("../../source/elevator_controller.v"
+           "../../source/elevator.v"
+           "../../source/elevator_button.v"
+	  "../testbench/elevator_controller_tb.v")	

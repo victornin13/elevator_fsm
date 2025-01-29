@@ -1,0 +1,13 @@
+#!/bin/bash
+
+# list of design files to be compiled
+
+ver_files=("../../source/elevator_controller.v"
+           "../../synthesis/netlists/elevator_controller_syn.v"
+          "../testbench/elevator_controller_compare_syn_tb.v"
+	  "../testbench/elevator_controller_syn_tb.v")
+
+#ver_files=("../../source/program_counter_v1.v"
+ #          "../../synthesis/netlists/program_counter_v1_syn.v"
+ #         "../testbench/program_counter_v1_compare_syn_tb.v"
+#	  "../testbench/program_counter_v1_syn_tb.v")		
